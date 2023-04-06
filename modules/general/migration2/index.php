@@ -803,6 +803,7 @@ VALUES ('".$login."','".$password."','".$user['passive']."','".$user['down']."',
             $billing->setpassive($login,$user['passive']);
             $billing->settariff($login,$user['tariff']);
             $billing->setcredit($login,$user['credit']);
+	    $billing->setcreditexpire($login, $user['creditex']);
             $billing->setcash($login,$user['cash']);
 
             $NoOccupancyCreated = true;
